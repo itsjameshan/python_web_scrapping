@@ -69,7 +69,7 @@ data = {
     '12' : [],
 }
 
-for row in soup.select('table#ctl00_MainContent_gv1 tr')[1:]:
+for row in soup.select('table#MainContent_gv1 tr')[1:]:
     cols = row.find_all('td')
     data['year'].append( cols[0].get_text() )
     data['1'].append( cols[1].get_text() )
