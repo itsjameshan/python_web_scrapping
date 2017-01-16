@@ -49,7 +49,7 @@ soup = BeautifulSoup(response.content)
 #    cells=row.find_all("td")
 #    print(cells)
 '''
-for row in soup.select('table#ctl00_MainContent_gv1 tr')[1:]:
+for row in soup.select('table#MainContent_gv1 tr')[1:]:
   for x in range(0, 12):
      print (row.find_all("td")[x].text)
 '''
